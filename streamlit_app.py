@@ -35,10 +35,10 @@ def app():
         urllib.request.urlretrieve(output, 'output.png')
         img = Image.open('output.png')
         img_array = np.array(img)
-        plt.figure(figsize=(9,9))
+        fig = plt.figure(figsize=(9,9))
         ax = plt.axes(xticks=[], yticks=[])
         ax.imshow(img_array)
-        st.pyplot(ax)
+        st.pyplot(fig)
      
 
 # Run the app
