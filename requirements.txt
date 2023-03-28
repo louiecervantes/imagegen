@@ -3,3 +3,4 @@ streamlit_option_menu
 openai
 Image
 Pillow
+matplotlib
